@@ -1,18 +1,19 @@
 # Stable-Diffusion-Mindat [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1758310694/Stable-Diffusion-Mindat/blob/main/Stable_Diffusion×Mindat.ipynb)
 
-本项目旨在基于Mindat文本属性组合来生成矿物图像。通过使用Mindat数据来微调Stable Diffusion，且过程不依赖于矿物种类信息。
+This project aims to generate mineral images based on a combination of textual properties from Mindat. This is achieved by fine-tuning Stable Diffusion using Mindat data, without relying on specific mineral type information.
 
-以下是项目结构：
+The project structure is as follows:
 ```
-├── Stable_Diffusion×Mindat.ipynb      // 数据集构建、模型微调、推理及评估流程
-├── SD_Mindat
-│   ├── app.py               // 工具主程序
-│   ├── requirements.txt     // 其他依赖
-│   ├── download_model.py    // 权重模型下载
-│   ├── README.md         // 工具构建说明
-│   └── Dockerfile         // Docker配置文件
-└── README.md           // 总说明
+├── Stable_Diffusion×Mindat.ipynb      // Dataset construction, model fine-tuning, inference, and evaluation process.
+├── SD_Mindat                 // An interactive tool
+│   ├── app.py               // Tool main program
+│   ├── requirements.txt     // Other dependencies
+│   ├── download_model.py    // Weight model download
+│   ├── README.md         // Tool build instructions
+│   └── Dockerfile         // Docker configuration file
+└── README.md           // General Instructions
 ```
 
-Stable_Diffusion×Mindat.ipynb包含Mindat图像文本对数据集的创建流程、模型微调的具体参数值、微调后模型的推理与评估工作流程，可在 Colab 上方便运行和查看结果。
-SD_Mindat是将微调模型开发成为一个供用户直接便捷可使用的交互式工具，其使用流程如下：
+The `Stable_Diffusion×Mindat.ipynb` notebook contains the process for creating the Mindat image-text pair dataset, the specific parameter values ​​for model fine-tuning, and the workflow for inference and evaluation of the fine-tuned model. It can be easily run and viewed on Google Colab.
+
+`SD_Mindat` develops fine-tuned models into an interactive tool that is convenient and easy for users to use. The usage process is as follows:

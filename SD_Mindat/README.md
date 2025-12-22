@@ -37,20 +37,20 @@ pip --version
 ```
 
 ### Code acquisition (Install)
-
 #### Method 1: Download the source code directly.
 
 On the GitHub project page, click **Code → Download ZIP** to download and extract the source code.
 
 #### Method 2: Use Git cloning (recommended)
 ```cmd
-git clone [*.git]
+git clone https://github.com/1758310694/Stable-Diffusion-Mindat.git
+
 ```
 
 ### Detailed Configuration (Setup)
 ```cmd
-# Enter the project directory.
-cd ./SD_Mindat
+# Enter the project directory. (Default project files are located at C:/Users/Lenovo/Desktop)
+cd ./Stable-Diffusion-Mindat/SD_Mindat
 
 # Pull the official Python 3.10 slim base image.
 docker pull python:3.10-slim
@@ -94,6 +94,7 @@ You can then access the visual interface and enter text prompts to generate mine
 
 If Cloudflare Tunnel is enabled, exposing your local service to the public internet, it can be accessed via a random address displayed in the terminal output, for example: https://xxxx.trycloudflare.com
 This interactive tool is now publicly available at https://webpage-assessments-cdna-dana.trycloudflare.com
+
 
 
 

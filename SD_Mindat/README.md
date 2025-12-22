@@ -93,10 +93,12 @@ You can then access the visual interface and enter text prompts to generate mine
 #### 2. Public network access (optional)
 
 If Cloudflare Tunnel is enabled, exposing your local service to the public internet, it can be accessed via a random address displayed in the terminal output, for example: https://xxxx.trycloudflare.com
+
 This interactive tool is now publicly available at https://exclude-phrases-planet-blonde.trycloudflare.com
 
 The interface of this interactive tool is shown below:
 ![示例图](images/tool.png)
+
 
 
 

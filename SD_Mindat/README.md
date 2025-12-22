@@ -2,7 +2,7 @@
 
 
 ## 1、This project supports rapid deployment based on Hugging Face Spaces. 
-You can directly use the interactive application framework provided by Spaces and replace the default `app.py` with `/SD_Mindat/app.py` from this repository to obtain a customized interface and functionality. See the example space: https://huggingface.co/spaces/Quanli1/SD_Mindat. Deployment can be completed by replacing the script in the same way.
+You can directly use the interactive application framework provided by Spaces and replace the default `app.py` with `Stable-Diffusion-Mindat/SD_Mindat/app.py` from this repository to obtain a customized interface and functionality. See the example space: https://huggingface.co/spaces/Quanli1/SD_Mindat. Deployment can be completed by replacing the script in the same way.
 
 
 ## 2、Local deployment && public network access
@@ -94,6 +94,7 @@ You can then access the visual interface and enter text prompts to generate mine
 
 If Cloudflare Tunnel is enabled, exposing your local service to the public internet, it can be accessed via a random address displayed in the terminal output, for example: https://xxxx.trycloudflare.com
 This interactive tool is now publicly available at https://webpage-assessments-cdna-dana.trycloudflare.com
+
 
 
 

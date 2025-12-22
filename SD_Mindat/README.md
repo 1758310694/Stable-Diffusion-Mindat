@@ -1,20 +1,22 @@
-# SD_Mindat Text-to-Image
-一个基于 Mindat 矿物数据的 Stable Diffusion 文生图项目  
+# Interactive tool for generating mineral images based on text properties.
 
-## 开始（Getting Started）
+## Getting Started
+1、本项目支持基于 Hugging Face Spaces 的快速部署。您可以直接使用 Spaces 提供的交互式应用框架，并将默认的 `app.py` 替换为本仓库中的 `/SD_Mindat/app.py`，即可获得定制化的界面与功能。参考示例空间：https://huggingface.co/spaces/Quanli1/SD_Mindat 。按照相同方式替换脚本即可完成部署。
 
-### 环境配置（Prerequisites）
 
-请确保你的运行环境满足以下要求：
+2、
+### Prerequisites
 
-- **Docker**（推荐使用 Docker Desktop）
+Please ensure your operating environment meets the following requirements:
+
+- **Docker**（We recommend using Docker Desktop.）
 - **NVIDIA GPU**
 - **CUDA 12.6**
-- **NVIDIA Container Toolkit**（用于 Docker 调用 GPU）
-- **Python 3.10 + pip**（用于下载模型）
-- **cloudflared**（用于将本地服务暴露到公网）
+- **NVIDIA Container Toolkit**（Used for calling the GPU from within Docker.）
+- **Python 3.10 + pip**（Used for downloading models.）
+- **cloudflared**（Used to expose local services to the public internet.）
  
-### 检查环境（Verify Environment）
+### Verify Environment
 
 在命令行中执行以下命令，确认环境配置正确：
 
@@ -94,4 +96,5 @@ cloudflared tunnel --url http://localhost:7860
 > - **禁止将本服务用于违法、违规或有害内容生成** 
 > - 公网地址为临时生成，关闭隧道后会失效  
 > - 若需要长期访问，可创建持久隧道并绑定自定义子域名  
+
 > - 确保 Docker 容器正在运行且端口 7860 已暴露

@@ -1,4 +1,5 @@
-# Stable-Diffusion-Mindat
+# Stable-Diffusion-Mindat [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1758310694/Stable-Diffusion-Mindat/blob/main/Stable_Diffusion×Mindat.ipynb)
+
 本项目旨在基于Mindat文本属性组合来生成矿物图像。通过使用Mindat数据来微调Stable Diffusion，且过程不依赖于矿物种类信息。
 
 以下是项目结构：

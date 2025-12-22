@@ -4,7 +4,7 @@
 1、This project supports rapid deployment based on Hugging Face Spaces. You can directly use the interactive application framework provided by Spaces and replace the default `app.py` with `/SD_Mindat/app.py` from this repository to obtain a customized interface and functionality. See the example space: https://huggingface.co/spaces/Quanli1/SD_Mindat. Deployment can be completed by replacing the script in the same way.
 
 
-2、
+2、Local deployment && public network access
 ### Prerequisites
 
 Please ensure your operating environment meets the following requirements:
@@ -98,5 +98,6 @@ cloudflared tunnel --url http://localhost:7860
 > - 若需要长期访问，可创建持久隧道并绑定自定义子域名  
 
 > - 确保 Docker 容器正在运行且端口 7860 已暴露
+
 
 

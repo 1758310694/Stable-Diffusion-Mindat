@@ -17,3 +17,4 @@ The project structure is as follows:
 The `Stable_Diffusion×Mindat.ipynb` notebook contains the process for creating the Mindat image-text pair dataset, the specific parameter values ​​for model fine-tuning, and the workflow for inference and evaluation of the fine-tuned model. It can be easily run and viewed on Google Colab.
 
 `SD_Mindat` develops fine-tuned models into an interactive tool that is convenient and easy for users to use. The usage process is as follows:
+

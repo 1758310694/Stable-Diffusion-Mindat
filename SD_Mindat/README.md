@@ -94,8 +94,10 @@ You can then access the visual interface and enter text prompts to generate mine
 
 If Cloudflare Tunnel is enabled, exposing your local service to the public internet, it can be accessed via a random address displayed in the terminal output, for example: https://xxxx.trycloudflare.com
 This interactive tool is now publicly available at https://webpage-assessments-cdna-dana.trycloudflare.com
+
 The interface of this interactive tool is shown below:
 ![示例图](images/tool.png)
+
 
 
 

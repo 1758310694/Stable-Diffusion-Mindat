@@ -20,86 +20,83 @@ Please ensure your operating environment meets the following requirements:
  
 ### Verify Environment
 
-在命令行中执行以下命令，确认环境配置正确：
+Execute the following command in the command line to confirm that the environment is configured correctly:
 
 ```cmd
-# 查看 Docker 版本，确认 Docker 已正确安装
+# Check the Docker version to confirm that Docker is installed correctly.
 docker --version
 
-# 查看 CUDA 版本（nvcc 编译器），确认 GPU 驱动和 CUDA 可用
+# Check the CUDA version (nvcc compiler) to confirm that the GPU driver and CUDA are available.
 nvcc -V
 
-# 查看 Python 版本，确认已安装 Python 3.10+
+# Check your Python version to confirm that Python 3.10 or later is installed.
 python --version
 
-# 查看 pip 版本，确认 pip 可用
+# Check the pip version to confirm that pip is available.
 pip --version
 ```
 
-### 代码获取（Installation）
+### Code acquisition (Install)
 
-#### 方法一：直接下载源码
+#### Method 1: Download the source code directly.
 
-在 GitHub 项目页面点击 **Code → Download ZIP**，下载并解压源码。
+On the GitHub project page, click **Code → Download ZIP** to download and extract the source code.
 
-#### 方法二：使用 Git 克隆（推荐）
+#### Method 2: Use Git cloning (recommended)
 ```cmd
 git clone [*.git]
 ```
 
-### 详细配置（Setup）
+### Detailed Configuration (Setup)
 ```cmd
-# 进入项目目录
-cd ./test-mineral-df
+# Enter the project directory.
+cd ./SD_Mindat
 
-# 拉取官方 Python 3.10 精简版基础镜像
+# Pull the official Python 3.10 slim base image.
 docker pull python:3.10-slim
 
-# 基于当前目录下的 Dockerfile 构建镜像（df-mineral-cu126）
+# Build a Docker image (df-mineral-cu126) based on the Dockerfile in the current directory.
 docker build -t df-mineral-cu126 .
 
-# 安装 Hugging Face Hub（用于模型下载与管理）
+# Install Hugging Face Hub (for model download and management)
 pip install huggingface_hub
 
-# 执行自定义 python 脚本，从 Hugging Face 下载 Stable Diffusion 所需模型 Quanli1/sd-1.5-FT
-# 默认下载路径为 C:/Users/Lenovo/hf_cache，可在脚本中修改
+# Execute a custom Python script to download the necessary Stable Diffusion model Quanli1/sd-1.5-FT from Hugging Face.
+# The default download path is C:/Users/Lenovo/hf_cache, which can be modified in the script.
 python download_model.py
 
 ```
 
-### 运行docker容器（Run Container）
+### Run a Docker container（Run Container）
 ```cmd
-# 运行 Docker 容器，使用 GPU 并映射端口 7860
-# -v 将本地模型缓存目录映射到容器内，保证模型可用
-# 如果修改了默认下载路径，请相应修改挂载路径
-# 容器启动后执行 app.py 启动应用
+# Run the Docker container, using the GPU and mapping port 7860.
+# -v Maps the local model cache directory to the container, ensuring the model is available.
+# If you have modified the default download path, please modify the mount path accordingly.
+# After the container starts, execute `app.py` to launch the application.
 docker run -it --gpus all -p 7860:7860 -v C:/Users/Lenovo/hf_cache:/root/.cache/huggingface/hub df-mineral-cu126  python app.py
 
-# 将本地应用暴露到公网（可选）
-# 执行后终端会输出一个随机生成的公网地址，例如：https://xxxx.trycloudflare.com
+# Expose the local application to the public network (optional)
+# After execution, the terminal will output a randomly generated public IP address, for example:https://xxxx.trycloudflare.com
 cloudflared tunnel --url http://localhost:7860
 ```
 
-### 操作使用说明（Usage）
+### Operating Instructions（Usage）
 
-在完成 Docker 容器启动和模型下载后，你可以通过以下方式使用 SD_Mindat 文生图应用：
+After the Docker container has started and the model has been downloaded, you can use the mineral image generation application in the following ways:
 
-#### 1. 本地访问
+#### 1. Local access
 
-打开浏览器，访问本地服务地址：http://localhost:7860
+Open your web browser and access the local service address: http://localhost:7860
 
-即可进入可视化界面，输入文本提示生成矿物图像。
+You can then access the visual interface and enter text prompts to generate mineral images.
 
-#### 2. 公网访问（可选）
+#### 2. Public network access (optional)
 
-如果启用了 Cloudflare 隧道，将本地服务暴露到公网，可以通过终端输出的随机地址访问，例如：https://xxxx.trycloudflare.com
+If Cloudflare Tunnel is enabled, exposing your local service to the public internet, it can be accessed via a random address displayed in the terminal output, for example: https://xxxx.trycloudflare.com
+This interactive tool is now publicly available at https://webpage-assessments-cdna-dana.trycloudflare.com
 
-> ⚠️ 注意：
-> - **禁止将本服务用于违法、违规或有害内容生成** 
-> - 公网地址为临时生成，关闭隧道后会失效  
-> - 若需要长期访问，可创建持久隧道并绑定自定义子域名  
 
-> - 确保 Docker 容器正在运行且端口 7860 已暴露
+
 
 
 

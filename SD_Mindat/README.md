@@ -1,7 +1,7 @@
 # Interactive tool for generating mineral images based on text properties.
 
 ## Getting Started
-1、本项目支持基于 Hugging Face Spaces 的快速部署。您可以直接使用 Spaces 提供的交互式应用框架，并将默认的 `app.py` 替换为本仓库中的 `/SD_Mindat/app.py`，即可获得定制化的界面与功能。参考示例空间：https://huggingface.co/spaces/Quanli1/SD_Mindat 。按照相同方式替换脚本即可完成部署。
+1. This project supports rapid deployment based on Hugging Face Spaces. You can directly use the interactive application framework provided by Spaces and replace the default `app.py` with `/SD_Mindat/app.py` from this repository to obtain a customized interface and functionality. See the example space: https://huggingface.co/spaces/Quanli1/SD_Mindat. Deployment can be completed by replacing the script in the same way.
 
 
 2、
@@ -98,3 +98,4 @@ cloudflared tunnel --url http://localhost:7860
 > - 若需要长期访问，可创建持久隧道并绑定自定义子域名  
 
 > - 确保 Docker 容器正在运行且端口 7860 已暴露
+

@@ -18,3 +18,4 @@ The `Stable_Diffusion×Mindat.ipynb` notebook contains the process for creating 
 
 `SD_Mindat` develops fine-tuned models into an interactive tool that is convenient and easy for users to use. The usage process is as follows:
 
+![示例图](SD_Mindat/images/tool1.png)

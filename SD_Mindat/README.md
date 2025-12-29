@@ -1,6 +1,7 @@
 # Interactive tool for generating mineral images based on text properties.
 
 Hugging Face Spaces deployment: https://huggingface.co/spaces/Quanli1/SD_Mindat
+
 Local deployment (publicly accessible): https://mineral-sd-ft.giswetland.com/
 
 
@@ -101,6 +102,7 @@ This interactive tool is now publicly available at https://exclude-phrases-plane
 
 The interface of this interactive tool is shown below:
 ![示例图](images/tool.png)
+
 
 
 

@@ -1,5 +1,8 @@
 # Interactive tool for generating mineral images based on text properties.
 
+Hugging Face Spaces deployment: https://huggingface.co/spaces/Quanli1/SD_Mindat
+Local deployment (publicly accessible): https://mineral-sd-ft.giswetland.com/
+
 
 ## 1、This project supports rapid deployment based on Hugging Face Spaces. 
 You can directly use the interactive application framework provided by Spaces and replace the default `app.py` with `Stable-Diffusion-Mindat/SD_Mindat/app.py` from this repository to obtain a customized interface and functionality. See the example space: https://huggingface.co/spaces/Quanli1/SD_Mindat. Deployment can be completed by replacing the script in the same way.
@@ -98,6 +101,7 @@ This interactive tool is now publicly available at https://exclude-phrases-plane
 
 The interface of this interactive tool is shown below:
 ![示例图](images/tool.png)
+
 
 
 

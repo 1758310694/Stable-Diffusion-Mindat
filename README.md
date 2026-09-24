@@ -31,19 +31,14 @@ The `Stable_Diffusion×Mindat.ipynb` notebook contains the process for creating 
 
 
 
-This repository contains code for mineral image-text pairs based on the Mindat mineral image dataset.
-
-## Dataset
-The dataset used in this project is the mineral image dataset collected from Mindat.org.
-
-## Data Sources
-Images are sourced from the public photo gallery of Mindat.org (https://www.mindat.org).
+This repository contains code for mineral image-text pairs based on the Mindat mineral image dataset (https://www.mindat.org).
 
 ## Copyright & Attribution
-All mineral images in this dataset are copyrighted by their respective **Mindat.org uploaders / photographers**. Images are sourced from the Mindat.org photo gallery. Each image retains copyright by the contributing photographer; some images are released under Creative Commons licenses while others are all-rights-reserved.
 
-This dataset is distributed for academic research only. Any reuse of individual images must comply with the original license specified on the corresponding Mindat photo page and requires attribution to the original Mindat uploader.
+All mineral images in Mindat dataset are copyrighted by their respective **Mindat.org uploaders / photographers**. Each image retains copyright by the contributing photographer; some images are released under Creative Commons licenses while others are all-rights-reserved.
 
-The dataset curators only perform collection and preprocessing. **We do NOT hold the copyright of the original images**, and no rights beyond the original Mindat image licenses are granted to end users.
+Any reuse of individual images must comply with the original license specified on the corresponding Mindat photo page and requires attribution to the original Mindat uploader.
+
+**We do NOT hold the copyright of the original images**, and no rights beyond the original Mindat image licenses are granted to end users.
 
 Source: https://www.mindat.org

@@ -42,3 +42,6 @@ Any reuse of individual images must comply with the original license specified o
 **We do NOT hold the copyright of the original images**, and no rights beyond the original Mindat image licenses are granted to end users.
 
 Source: https://www.mindat.org
+
+## Acknowledgement
+The mineral images used in this project are sourced from [mindat.org](https://mindat.org), copyright belongs to the original photographers.The dataset used in this project for model training is for academic research only.

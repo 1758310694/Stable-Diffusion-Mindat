@@ -27,3 +27,23 @@ The `Stable_Diffusion×Mindat.ipynb` notebook contains the process for creating 
 (④) Result display — the model produces the corresponding mineral image, displayed in the results panel, with a watermark added at the bottom-right corner of the output.
 
 ![示例图](SD_Mindat/images/tool1.png)
+
+
+
+
+This repository contains code for mineral image-text pairs based on the Mindat mineral image dataset.
+
+## Dataset
+The dataset used in this project is the mineral image dataset collected from Mindat.org.
+
+## Data Sources
+Images are sourced from the public photo gallery of Mindat.org (https://www.mindat.org).
+
+## Copyright & Attribution
+All mineral images in this dataset are copyrighted by their respective **Mindat.org uploaders / photographers**. Images are sourced from the Mindat.org photo gallery. Each image retains copyright by the contributing photographer; some images are released under Creative Commons licenses while others are all-rights-reserved.
+
+This dataset is distributed for academic research only. Any reuse of individual images must comply with the original license specified on the corresponding Mindat photo page and requires attribution to the original Mindat uploader.
+
+The dataset curators only perform collection and preprocessing. **We do NOT hold the copyright of the original images**, and no rights beyond the original Mindat image licenses are granted to end users.
+
+Source: https://www.mindat.org

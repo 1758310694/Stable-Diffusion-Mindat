@@ -46,5 +46,5 @@ Source: https://www.mindat.org
 ## Acknowledgement
 The mineral images used in this project are sourced from [mindat.org](https://mindat.org), copyright belongs to the original photographers.The dataset used in this project for model training is for academic research only.
 
-The copyright information of the Mindat images used in the figure of the article （https://doi.org/10.1007/s12145-026-02235-2 ） is as follows: 
+The copyright information of the Mindat images used in the figures of the article （https://doi.org/10.1007/s12145-026-02235-2 ） are as follows: 
 Figure 1 uses images from Mindat for which the copyrights are owned by Vandall King, Stephan Wolfsried, Rob Lavinsky & irocks.com, Harold Moritz, Stephan Wolfsried. Figure 2 uses Mindat images for which the copyrights are owned by Matteo Chinellato, Michael Förch, Arliguie Michel,Christal Tianhong Wang,Joy Desor. Figure 3 uses Mindat images for which the copyrights are owned by Joy Desor. Figure 4 uses images from Mindat for which the copyrights are owned by Volker Betz, Fabre Minerals (Jordi Fabre).
